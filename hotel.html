@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
+    <meta charset="UTF-8">
+    <title>Hotelzimmer-Buchungssystem</title>
 
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
-
-
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+    <fieldset>
+        <label> Zimmertyp:
+            <select name="Zimmertyp[]" size="5" multiple>
+                <option>Einzelzimmer</option>
+                <option>Doppelzimmer</option>
+                <option>Suite</option>
+                <option>Küche</option>
+                <option>Wohnzimmer</option>
+                <option>Badezimmer</option>
+                <option>Kinderzimmer</option>
+                <option>Halbzimmer</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label> Zusatzleistungen:
+            <input type="checkbox" id="a" name="Zusatzleistungen[]" value="Frühstück">
+            <label for="a"> Frühstück </label>
+            <input type="checkbox" id="b" name="Zusatzleistungen[]" value="Parken">
+            <label for="b"> Parken </label>
+            <input type="checkbox" id="c" name="Zusatzleistungen[]" value="Zimmermerkmale">
+            <label for="c"> Zimmermerkmale </label>
+            <input type="checkbox" id="d" name="Zusatzleistungen[]" value="Essen">
+            <label for="d"> Essen </label>
+            <input type="checkbox" id="e" name="Zusatzleistungen[]" value="Wellness">
+            <label for="e"> Wellness </label>
+            <input type="checkbox" id="f" name="Zusatzleistungen[]" value="Partnerschaften">
+            <label for="f"> Partnerschaften </label>
+            <input type="checkbox" id="g" name="Zusatzleistungen[]" value="Flughafentransfer">
+            <label for="g"> Flughafentransfer </label>
+            <input type="checkbox" id="h" name="Zusatzleistungen[]" value="Spa-Zugang">
+            <label for="h"> Spa-Zugang </label>
+        </label>
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
 </body>
 </html>
